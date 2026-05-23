@@ -42,18 +42,18 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
 <h2>💼 Projects</h2>
 
 <div class="grid">
-
 <div class="card">
-<h3>🔐 SOC Lab – Wazuh SIEM</h3>
-<p>Built and managed a multi-VM lab to simulate cyber attacks and monitor events using Wazuh SIEM.</p>
-<ul>
-<li>Simulated SSH brute-force attacks using Hydra</li>
-<li>Analysed authentication logs and alerts</li>
-<li>Detected port scanning activity (Nmap)</li>
-<li>Mapped findings to MITRE ATT&CK (T1110, T1046)</li>
-</ul>
+  <h3>🔐 SOC Lab – Wazuh SIEM</h3>
+  <div class="card">
+  <h3>🔐 SOC Lab – Wazuh SIEM</h3>
+  <p>Designed and implemented a SOC home lab to simulate cyber attacks and monitor security events in a controlled environment.</p>
+  <ul>
+    <li>Built a multi-VM environment with Windows 10 (target) and Ubuntu Server on VMware</li>
+    <li>Installed and configured Wazuh SIEM on Ubuntu, adding Windows 10 as a monitored agent</li>
+    <li>Used Kali Linux on VirtualBox as an attacking machine to perform controlled attacks</li>
+    <li>Analysed logs and monitored attack results through the Wazuh dashboard in real time</li>
+  </ul>
 </div>
-
 <div class="card">
 <h3>📊 Wireshark Traffic Analysis</h3>
 <p>Captured and analysed network traffic to identify anomalies and understand protocols.</p>
@@ -112,23 +112,29 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
 <h2>📶 Wireless Security Lab Projects</h2>
 
 <div class="card">
-<h3>🤖 Pwnagotchi Build</h3>
+<div class="card">
+  <h3>🤖 Pwnagotchi Build</h3>
 
-<p><strong>Technologies:</strong> Raspberry Pi Zero W, Bettercap, Linux</p>
+  <p>Designed and built a Pwnagotchi device for passive wireless monitoring, managing both hardware assembly and software configuration.</p>
 
-<ul>
-<li>Configured device using custom config.toml</li>
-<li>Captured and analysed WiFi handshakes</li>
-<li>Performed passive wireless monitoring</li>
-</ul>
+  <p><strong>Technologies:</strong> Raspberry Pi Zero W, Bettercap, Linux</p>
 
-<pre>
+  <ul>
+    <li>Purchased and assembled the required hardware components (Raspberry Pi Zero W and peripherals)</li>
+    <li>Followed official GitHub guides for setup, configuration, and deployment</li>
+    <li>Installed necessary drivers on a laptop and updated firmware to ensure proper functionality and compatibility</li>
+    <li>Configured the device using a custom <code>config.toml</code> file</li>
+    <li>Utilized Bettercap to capture and analyse WiFi handshakes</li>
+    <li>Performed passive wireless network monitoring in a controlled environment</li>
+  </ul>
+
+  <pre>
 main.name = "payrick_pwnagotchi"
 main.lang = "en"
 main.whitelist = ["MyWiFi"]
 bettercap.handshakes = "/root/handshakes"
-</pre>
-
+  </pre>
+  
 </div>
 
 <div class="card">

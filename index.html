@@ -42,8 +42,6 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
 <h2>💼 Projects</h2>
 
 <div class="grid">
-<div class="card">
-  <h3>🔐 SOC Lab – Wazuh SIEM</h3>
   <div class="card">
   <h3>🔐 SOC Lab – Wazuh SIEM</h3>
   <p>Designed and implemented a SOC home lab to simulate cyber attacks and monitor security events in a controlled environment.</p>
@@ -112,8 +110,8 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
   <ul>
     <li>Purchased and assembled the required hardware components (Raspberry Pi Zero W and peripherals)</li>
     <li>Followed official GitHub guides for setup, configuration, and deployment</li>
-    <li>Installed necessary drivers on a laptop and updated firmware to ensure proper functionality and compatibility</li>
-    <li>Configured the device using a custom <code>config.toml</code> file</li>
+    <li>Installed necessary drivers on a laptop and updated firmware to ensure proper functionality and compatibility (GitHub)</li>
+    <li>Configured the device using a custom <code>config.toml (GitHub)</code> file</li>
     <li>Utilized Bettercap to capture and analyse WiFi handshakes</li>
     <li>Performed passive wireless network monitoring in a controlled environment</li>
   </ul>
@@ -126,7 +124,30 @@ bettercap.handshakes = "/root/handshakes"
   </pre>
   
 </div>
+<div class="card">
+  <h3>🤖 Pwnagotchi & WiFi Pineapple Lab</h3>
 
+  <p>Designed and built wireless security testing devices for passive monitoring and analysis, managing both hardware and software within a home lab environment.</p>
+
+  <p><strong>Technologies:</strong> Bettercap, WiFi Pineapple Mark V compatible with OpenWrt, Linux</p>
+
+  <ul>
+    <li>Purchased and assembled hardware components Gl-iNet and wifi antenna chipset RT5370 </li>
+    <li>Followed official GitHub documentation to set up, configure, and deploy both devices</li>
+    <li>Installed required drivers on a laptop and updated firmware to ensure compatibility and proper operation(GitHub)</li>
+    <li>Configured and deployed WiFi Pineapple using official firmware for wireless network assessment</li>
+    <li>Integrated both devices into a home lab and used them for controlled wireless security testing and monitoring</li>
+    <li>Used Bettercap to capture and analyse WiFi handshakes</li>
+  </ul>
+
+  <pre>
+main.name = "payrick_pwnagotchi"
+main.lang = "en"
+main.whitelist = ["MyWiFi"]
+bettercap.handshakes = "/root/handshakes"
+  </pre>
+
+</div>
 <div class="card">
 <h3>📡 Flipper Zero Lab</h3>
 

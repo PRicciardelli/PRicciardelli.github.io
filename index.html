@@ -66,7 +66,46 @@ through platforms such as TryHackMe and personal lab projects.
 Built a home lab using virtual machines and Kali Linux to practice cybersecurity techniques 
 in an isolated environment.
 </p>
+<h2>💼 Description</h2>
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+    <h3>🔐 SOC Lab – Wazuh Monitoring</h3>
+    <p>Multi-VM lab environment for detecting cyber attacks using Wazuh SIEM.</p>
+    <ul>
+        <li>Simulated SSH brute-force attacks</li>
+        <li>Analyzed logs and alerts in Wazuh</li>
+        <li>Mapped events to MITRE ATT&CK</li>
+    </ul>
+</div>
 
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+    <h3>📡 WiFi Analysis – Pwnagotchi</h3>
+    <p>Wireless network analysis using Pwnagotchi in a controlled and authorized environment.</p>
+    <ul>
+        <li>Captured WiFi handshakes</li>
+        <li>Analyzed network security</li>
+        <li>Studied WPA/WPA2 behavior</li>
+    </ul>
+</div>
+
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+    <h3>📶 Wireless Security – Flipper Zero</h3>
+    <p>Exploration of wireless protocols and IoT devices using Flipper Zero.</p>
+    <ul>
+        <li>RF signal analysis</li>
+        <li>NFC/RFID interaction testing</li>
+        <li>Understanding wireless vulnerabilities</li>
+    </ul>
+</div>
+
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+    <h3>🖥️ Network Scanning & Enumeration</h3>
+    <p>Performed network reconnaissance and service discovery in lab environments.</p>
+    <ul>
+        <li>Port scanning using Nmap</li>
+        <li>Service and OS detection</li>
+        <li>Basic enumeration techniques</li>
+    </ul>
+</div>
 <h3>Wireshark Traffic Analysis</h3>
 <p>
 Captured and analysed network packets to understand protocols and identify anomalies.
@@ -82,7 +121,162 @@ Completed training focused on log analysis, threat detection and SOC fundamental
 Worked with tools such as Pwnagotchi, Flipper Zero and WiFi Pineapple 
 to explore wireless networking concepts in controlled environments.
 </p>
+<h2>🤖 Pwnagotchi Build & WiFi Analysis</h2>
 
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+
+    <h3>📌 Project Description</h3>
+    <p>
+        This project involves assembling a Pwnagotchi device and using it to analyze WiFi networks
+        in a controlled and authorized lab environment.
+    </p>
+
+    <h3>🛠️ Tools & Technologies</h3>
+    <ul>
+        <li>Raspberry Pi Zero W</li>
+        <li>Pwnagotchi OS</li>
+        <li>Bettercap</li>
+        <li>Linux (Kali / Ubuntu)</li>
+        <li>Balena Etcher</li>
+        <li>SSH</li>
+    </ul>
+
+    <h3>⚙️ Hardware Components</h3>
+    <ul>
+        <li>Raspberry Pi Zero W</li>
+        <li>MicroSD Card (16GB+ recommended) but used a 32GB</li>
+        <li>OLED Display (Waveshare V3)</li>
+        <li>USB Cable for a laptop connection</li>
+        <li>Portable Battery Pack</li>
+        <li>Header Pins (soldered)</li>
+    </ul>
+
+    <h3>💻 Installation Steps</h3>
+    <ol>
+        <li>Downloaded Pwnagotchi image from official repository</li>
+        <li>Flashed image to MicroSD using Balena Etcher</li>
+        <li>Configured <code>config.toml</code> file</li>
+        <li>Inserted SD card into Raspberry Pi</li>
+        <li>Connected via USB and accessed via SSH</li>
+    </ol>
+
+    <h3>🧠 Configuration</h3>
+    <code>
+main.name = "payrick_pwnagotchi"<br>
+main.lang = "en"<br>
+main.whitelist = ["MyWiFi"]<br>
+bettercap.handshakes = "/root/handshakes"
+    </code>
+
+    <h3>🔍 Activity Performed</h3>
+    <ul>
+        <li>Passive WiFi monitoring</li>
+        <li>Handshake capture (WPA/WPA2)</li>
+        <li>Network signal analysis</li>
+    </ul>
+
+    <h3>📊 Results</h3>
+    <ul>
+        <li>Captured multiple WPA handshakes</li>
+        <li>Identified nearby networks</li>
+        <li>Analyzed signal strength and encryption types</li>
+    </ul>
+
+    <h3>📚 Sources & References</h3>
+    <ul>
+        <li>https://pwnagotchi.ai/Official Pwnagotchi Website</a></li>
+        <li>https://github.com/evilsocket/pwnagotchi" target="_blank">Pwnagotchi GitHub Repository</a></li>
+        <li>https://www.bettercap.org/</li>
+    </ul>
+
+    <h3>📚 What I Learned</h3>
+    <ul>
+        <li>How WiFi authentication works</li>
+        <li>Handshake capture process</li>
+        <li>Wireless security basics</li>
+        <li>Embedded Linux device setup</li>
+    </ul>
+
+    <h3>⚠️ Disclaimer</h3>
+    <p>
+        All activities were performed on personal or authorized networks for educational purposes only.
+    </p>
+
+</div>
+
+<h2>📶 Flipper Zero – Wireless Monitoring & WiFi Security</h2>
+
+<div style="border:1px solid #1e293b; padding:15px; margin-bottom:20px;">
+
+    <h3>📌 Project Description</h3>
+    <p>
+        This project focuses on using Flipper Zero as a wireless analysis tool to understand and improve
+        the security of my home lab network in a controlled and authorized environment.
+    </p>
+
+    <h3>🛠️ Tools & Technologies</h3>
+    <ul>
+        <li>Flipper Zero</li>
+        <li>WiFi Development Board (ESP32 module)</li>
+        <li>Custom firmware (for educational purposes)</li>
+        <li>Kali Linux for analysis</li>
+        <li>Network scanning tools</li>
+    </ul>
+
+    <h3>⚙️ Activities Performed</h3>
+    <ul>
+        <li>Wireless signal monitoring</li>
+        <li>Detection of nearby WiFi networks</li>
+        <li>Analysis of network configurations</li>
+        <li>Testing device visibility and exposure</li>
+    </ul>
+
+    <h3>🔍 Security Analysis</h3>
+    <ul>
+        <li>Identified active devices connected to the network</li>
+        <li>Observed signal strength and coverage gaps</li>
+        <li>Reviewed encryption types (WPA2/WPA3)</li>
+        <li>Detected potential weak configurations</li>
+    </ul>
+
+    <h3>📊 Improvements Implemented</h3>
+    <ul>
+        <li>Strengthened WiFi encryption settings</li>
+        <li>Updated router firmware</li>
+        <li>Disabled unused network services</li>
+        <li>Optimized access point placement for better coverage</li>
+    </ul>
+
+    <h3>🧠 Skills Demonstrated</h3>
+    <ul>
+        <li>Wireless network analysis</li>
+        <li>Basic RF understanding</li>
+        <li>Network hardening techniques</li>
+        <li>Security-focused mindset</li>
+    </ul>
+
+    <h3>📚 Sources & References</h3>
+    <ul>
+        <li>https://flipperzero.one</li>
+        <li>https://docs.flipperzero.one</li>
+        <li>https://www.wi-fi.org/discover-wi-fi/security</li>
+    </ul>
+
+    <h3>📚 What I Learned</h3>
+    <ul>
+        <li>How wireless networks broadcast and operate</li>
+        <li>How to identify weak configurations safely</li>
+        <li>How to improve home network security</li>
+        <li>Importance of monitoring and visibility</li>
+    </ul>
+
+    <h3>⚠️ Disclaimer</h3>
+    <p>
+        All activities were conducted in a controlled lab environment on personally owned or authorized systems.
+        No unauthorized access or illegal testing was performed.
+    </p>
+
+</div>    
 ---
 
 <h2>Experience</h2>

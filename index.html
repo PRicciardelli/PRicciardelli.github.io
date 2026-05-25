@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrizio Ricciardelli | Cybersecurity Portfolio</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #58a6ff;
+}
+
+.card {
+    background: #161b22;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+hr {
+    border: 1px solid #30363d;
+}
+
+a {
+    color: #58a6ff;
+}
+</style>
+
+</head>
+
+<body>
+
 <div class="container">
 
 <h1>🔐 Patrizio Ricciardelli</h1>
@@ -6,14 +59,17 @@
 <hr>
 
 <h2>👨‍💻 Profile</h2>
-  
-<hr>
 
 <p>
-CompTIA A+ and Network+ certified IT professional transitioning into cybersecurity, with hands-on experience in SOC lab environments, threat detection, and log analysis.
+CompTIA Network+ certified IT professional transitioning into cybersecurity, with hands-on experience in security monitoring, SIEM administration, threat detection, log analysis, and network security.
 </p>
+
 <p>
-Skilled in using SIEM tools, analysing security events, and identifying suspicious activity through practical lab simulations and TryHackMe training.
+Currently studying for CompTIA Security+ while building practical cybersecurity skills through home lab projects, SIEM environments, wireless security testing, and TryHackMe training.
+</p>
+
+<p>
+Passionate about SOC operations, incident investigation, and threat detection.
 </p>
 
 <hr>
@@ -36,7 +92,7 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
 <ul>
 <li><strong>Operating Systems:</strong> Windows, Linux, Kali Linux</li>
 <li><strong>Networking:</strong> TCP/IP, Subnetting, LAN/WAN</li>
-<li><strong>Security Tools:</strong> Wireshark, Nmap, Hydra, Bettercap</li>
+<li><strong>Security Tools:</strong> Wireshark, Nmap, Bettercap, Wazuh</li>
 <li><strong>Virtualization:</strong> VMware, VirtualBox</li>
 </ul>
 
@@ -44,125 +100,151 @@ Skilled in using SIEM tools, analysing security events, and identifying suspicio
 
 <h2>💼 Projects</h2>
 
-<div class="grid">
-  <div class="card">
-  <h3>🔐 SOC Lab – Wazuh SIEM</h3>
-  <p>Designed and implemented a SOC home lab to simulate cyber attacks and monitor security events in a controlled environment.</p>
-  <ul>
-    <li>Built a multi-VM environment with Windows 10 (target) and Ubuntu Server on VMware</li>
-    <li>Installed and configured Wazuh SIEM on Ubuntu, adding Windows 10 as a monitored agent</li>
-    <li>Used Kali Linux on VirtualBox as an attacking machine to perform controlled attacks</li>
-    <li>Analysed logs and monitored attack results through the Wazuh dashboard in real time</li>
-  </ul>
-</div>
 <div class="card">
-<h3>📊 Wireshark Traffic Analysis</h3>
-<p>Captured and analysed network traffic to identify anomalies and understand protocols.</p>
+<h3>🔐 SOC Lab – Wazuh SIEM</h3>
 <ul>
-<li>Packet inspection</li>
-<li>Protocol analysis</li>
-<li>Basic anomaly detection</li>
+<li>Built multi-VM environment (Windows 10 + Ubuntu Server + Kali Linux)</li>
+<li>Installed and configured Wazuh SIEM on Ubuntu Server</li>
+<li>Connected Windows 10 endpoint as monitored agent</li>
+<li>Performed controlled attack simulations using Kali Linux</li>
+<li>Monitored logs and security events via Wazuh dashboard</li>
+<li>Analysed authentication logs and system alerts</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>📶 Flipper Zero – Wireless Security Testing</h3>
-<p>Used Flipper Zero to analyse wireless signals and improve network security posture.</p>
+<h3>📊 Wireshark Traffic Analysis</h3>
 <ul>
-<li>RF signal monitoring</li>
-<li>Identification of weak configurations</li>
-<li>Implemented network hardening improvements</li>
+<li>Captured and analysed DNS traffic</li>
+<li>Performed TCP/UDP packet inspection</li>
+<li>Identified abnormal network behaviour</li>
+<li>Generated packet analysis reports</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📶 Wireless Security Testing Lab</h3>
+<ul>
+<li>Flipper Zero RF signal analysis and wireless monitoring</li>
+<li>Identified weak WiFi configurations in lab environment</li>
+<li>Improved wireless security settings</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>🖥️ Network Scanning & Enumeration</h3>
-<p>Performed network reconnaissance in lab environments.</p>
 <ul>
-<li>Nmap scanning (TCP SYN, service detection)</li>
-<li>Host discovery and mapping</li>
-<li>Basic enumeration techniques</li>
+<li>Nmap TCP SYN scans and service detection</li>
+<li>Host discovery and network mapping</li>
+<li>Basic enumeration techniques in lab environments</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>🎓 TryHackMe – SOC Analyst Path</h3>
-<p>Completed hands-on labs focused on SOC operations and threat detection.</p>
+<h3>🎓 TryHackMe SOC Path</h3>
 <ul>
-<li>Log analysis and SIEM usage</li>
-<li>Threat detection and investigation</li>
+<li>SIEM and log analysis labs</li>
+<li>Threat detection exercises</li>
 <li>Incident response fundamentals</li>
-<li>MITRE ATT&CK framework</li>
+<li>MITRE ATT&CK framework understanding</li>
 </ul>
 </div>
+
+<hr>
+
+<h2>📡 Wireless Security Lab Projects</h2>
+
+<div class="card">
+
+<h3>🤖 Pwnagotchi Build</h3>
+
+<p>
+Built a Pwnagotchi device from scratch to gain hands-on experience with embedded Linux systems and wireless networking.
+</p>
+
+<ul>
+<li>Assembled Raspberry Pi Zero W hardware</li>
+<li>Installed Pwnagotchi OS from GitHub</li>
+<li>Configured custom config.toml settings</li>
+<li>Installed drivers and firmware updates</li>
+<li>Configured SSH remote access</li>
+<li>Used Bettercap for wireless monitoring in lab environment</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>📡 Custom Wireless Security Lab Device</h3>
+
+<p>
+Designed a wireless security lab device using GL.iNet router and RT5370 WiFi adapter.
+</p>
+
+<ul>
+<li>Configured GL.iNet router with OpenWRT-based firmware</li>
+<li>Installed firmware from GitHub sources</li>
+<li>Integrated external WiFi antenna (RT5370 chipset)</li>
+<li>Configured SSH remote administration</li>
+<li>Performed wireless network monitoring in lab environment</li>
+<li>Used Bettercap for packet analysis</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>📡 Flipper Zero Lab</h3>
+
+<ul>
+<li>RF signal monitoring and analysis</li>
+<li>Detection of weak wireless configurations</li>
+<li>Improved WiFi security settings in lab environment</li>
+</ul>
+
+<p><strong>Outcome:</strong> Improved understanding of wireless security exposure risks.</p>
 
 </div>
 
 <hr>
 
-<h2>📶 Wireless Security Lab Projects</h2>
-
-<div class="card">
-<div class="card">
-  <h3>🤖 Pwnagotchi Build</h3>
-
-  <p>Built a Pwnagotchi device for passive wireless monitoring, managing both hardware assembly and software configuration.</p>
-
-  <p><strong>Technologies:</strong> Raspberry Pi Zero W, Bettercap, Linux</p>
-
-  <ul>
-    <li>Purchased and assembled the required hardware components (Raspberry Pi Zero W and peripherals)</li>
-    <li>Followed official GitHub guides for setup, configuration, and deployment</li>
-    <li>Installed necessary drivers on a laptop and updated firmware to ensure proper functionality and compatibility (GitHub)</li>
-    <li>Configured the device using a custom <code>config.toml (GitHub)</code> file</li>
-    <li>Utilized Bettercap to capture and analyse WiFi handshakes</li>
-    <li>Performed passive wireless network monitoring in a controlled environment</li>
-  </ul>
-
-  <pre>
-main.name = "payrick_pwnagotchi"
-main.lang = "en"
-main.whitelist = ["MyWiFi"]
-bettercap.handshakes = "/root/handshakes"
-  </pre>
-  
-</div>
-<div class="card">
-  <h3>🤖WiFi Pineapple Lab</h3>
-
-  <p>Built wireless security testing devices for passive monitoring and analysis, managing both hardware and software within a home lab environment.</p>
-
-  <p><strong>Technologies:</strong> Bettercap, WiFi Pineapple Mark V compatible with OpenWrt, Linux</p>
-
-  <ul>
-    <li>Purchased and assembled hardware components Gl-iNet and wifi antenna chipset RT5370 </li>
-    <li>Followed official GitHub documentation to set up, configure, and deploy both devices</li>
-    <li>Installed required drivers on a laptop and updated firmware to ensure compatibility and proper operation(GitHub)</li>
-    <li>Configured and deployed WiFi Pineapple using official firmware for wireless network assessment</li>
-    <li>Integrated device into a home lab and used it for controlled wireless security testing and monitoring</li>
-    <li>Used Bettercap to capture and analyse WiFi handshakes</li>
-  </ul>
-</div>
-<div class="card">
-<h3>📡 Flipper Zero Lab</h3>
+<h2>🏠 Cybersecurity Home Lab</h2>
 
 <ul>
-<li>Monitored wireless signals</li>
-<li>Identified network exposure issues</li>
-<li>Improved WiFi configuration and security</li>
-<li>Optimised access point placement</li>
+<li>Ubuntu Server (Wazuh SIEM)</li>
+<li>Windows 10 Endpoint</li>
+<li>Kali Linux VM</li>
+<li>VMware Workstation</li>
+<li>Pwnagotchi Device</li>
+<li>Custom Wireless Security Lab Device</li>
+<li>Wireshark Network Analysis</li>
+<li>SSH Remote Administration</li>
 </ul>
 
-<p><strong>Outcome:</strong> Improved network security and visibility.</p>
+<hr>
 
-<p><strong>Disclaimer:</strong> All activities performed in home lab environment.</p>
+<h2>🏆 Certifications</h2>
 
-</div>
+<ul>
+<li>CompTIA Network+ (Certified)</li>
+<li>CompTIA Security+ (In Progress)</li>
+<li>TryHackMe SOC Level 1 Path</li>
+</ul>
+
+<hr>
 
 <h2>💼 Experience</h2>
+
 <p>
-Over 20 years of leadership and operational experience in fast-paced environments, with strong
-problem-solving, communication and incident management skills transferable to IT techical Support, Jonior SOC analyst roles.
+Over 20 years of leadership and operational experience in fast-paced environments, with strong problem-solving, communication, and incident management skills transferable to IT Technical Support and Junior SOC Analyst roles.
+</p>
+
+<hr>
+
+<h2>🎯 Career Objective</h2>
+
+<p>
+Seeking an entry-level SOC Analyst or Cybersecurity Analyst role where I can apply hands-on home lab experience, networking knowledge, SIEM monitoring skills, and continuous learning mindset to support security operations.
 </p>
 
 <hr>
@@ -171,9 +253,11 @@ problem-solving, communication and incident management skills transferable to IT
 
 <ul>
 <li>Email: patrizio.ricciardelli@gmail.com</li>
-<li><a href="https://github.com/PRicciardelli" target="_blank">GitHub Profile</a></li>
+<li><a href="https://PRicciardelli.GitHub.io" target="_blank">GitHub</a></li>
 <li><a href="https://uk.linkedin.com/in/patrizio-ricciardelli-363b3340a" target="_blank">LinkedIn</a></li>
 </ul>
 
 </div>
 
+</body>
+</html>

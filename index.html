@@ -100,16 +100,33 @@ Passionate about SOC operations, incident investigation, and threat detection.
 
 <h2>💼 Projects</h2>
 
-<div class="card">
-<h3>🔐 SOC Lab – Wazuh SIEM</h3>
-<ul>
-<li>Built multi-VM environment (Windows 10 + Ubuntu Server + Kali Linux)</li>
-<li>Installed and configured Wazuh SIEM on Ubuntu Server</li>
-<li>Connected Windows 10 endpoint as monitored agent</li>
-<li>Performed controlled attack simulations using Kali Linux</li>
-<li>Monitored logs and security events via Wazuh dashboard</li>
-<li>Analysed authentication logs and system alerts</li>
-</ul>
+<div>
+  <h2>Virtual Lab Environment</h2>
+  <p>
+    The lab environment was built using multiple virtual machines deployed across two different hypervisors.
+    Specifically, <strong>VMware</strong> was used to create two main virtual machines: an 
+    <strong>Ubuntu Server</strong> instance, acting as the central monitoring and management system, 
+    and a <strong>Windows 10</strong> machine, configured as the target host.
+  </p>
+
+  <p>
+    On the Ubuntu Server, the <strong>Wazuh Manager</strong> was installed and configured to function as a 
+    SIEM (Security Information and Event Management) platform. The <strong>Wazuh agent</strong> was then installed 
+    on the Windows 10 machine and successfully connected to the manager. The agent registration and communication 
+    were verified both locally on Windows 10 and through the <strong>Wazuh dashboard</strong>, ensuring that logs 
+    and security events were properly collected and visualized.
+  </p>
+
+  <p>
+    In parallel, a <strong>Kali Linux</strong> virtual machine was deployed using <strong>VirtualBox</strong>, 
+    serving as the attacker system. Various simulated attacks were launched from Kali Linux against the Windows 10 
+    machine in order to generate security events and test detection capabilities.
+  </p>
+
+  <p>
+    All malicious activities and intrusion attempts were monitored through the Wazuh platform, allowing for 
+    real-time event analysis, log correlation, and the generation of detailed security reports.
+  </p>
 </div>
 
 <div class="card">

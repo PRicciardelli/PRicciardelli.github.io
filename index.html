@@ -7,12 +7,27 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: #e6edf3;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    margin: 0;
+    color: #58a6ff;
+}
+
+.subtitle {
+    color: #8b949e;
+    margin-top: 10px;
 }
 
 .container {
@@ -22,258 +37,204 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
+h2 {
     color: #58a6ff;
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
 }
 
 .card {
     background: #161b22;
     padding: 15px;
-    margin: 15px 0;
     border-radius: 10px;
     border: 1px solid #30363d;
+    transition: 0.3s;
 }
 
-ul {
-    padding-left: 20px;
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
 }
 
-hr {
-    border: 1px solid #30363d;
+.badge {
+    display: inline-block;
+    background: #21262d;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 12px;
 }
 
-a {
-    color: #58a6ff;
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background: #238636;
+}
+
+.btn:hover {
+    background: #2ea043;
+}
+
+.btn-secondary {
+    background: #1f6feb;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
 }
 </style>
-
 </head>
 
 <body>
 
+<header>
+<h1>🔐 Patrizio Ricciardelli</h1>
+<p class="subtitle">Junior SOC Analyst | IT Support | Cybersecurity Enthusiast</p>
+
+<a class="btn btn-secondary" href="https://github.com/PRicciardelli" target="_blank">GitHub</a>
+<a class="btn" href="mailto:patrizio.ricciardelli@gmail.com">Contact Me</a>
+</header>
+
 <div class="container">
 
-<h1>🔐 Patrizio Ricciardelli</h1>
-<p><strong>Junior SOC Analyst | IT Support | Cybersecurity Enthusiast</strong></p>
-
-<hr>
-
 <h2>👨‍💻 Profile</h2>
-
 <p>
-CompTIA Network+ certified IT professional transitioning into cybersecurity, with hands-on experience in security monitoring, SIEM administration, threat detection, log analysis, and network security.
+CompTIA Network+ certified IT professional transitioning into cybersecurity, focused on SOC operations, threat detection, log analysis, and security monitoring.
+Currently building real-world experience through home lab environments and TryHackMe training.
 </p>
 
-<p>
-Currently studying for CompTIA Security+ while building practical cybersecurity skills through home lab projects, SIEM environments, wireless security testing, and TryHackMe training.
-</p>
+<h2>🧠 Core Skills</h2>
 
-<p>
-Passionate about SOC operations, incident investigation, and threat detection.
-</p>
-
-<hr>
-
-<h2>🧠 Core Competencies</h2>
-<ul>
-<li>Security Operations (SOC Fundamentals)</li>
-<li>Threat Detection & Analysis</li>
-<li>Log Analysis (Linux & Windows)</li>
-<li>SIEM Tools (Wazuh, Splunk basics)</li>
-<li>Network Traffic Analysis (Wireshark)</li>
-<li>Network Scanning & Enumeration</li>
-<li>MITRE ATT&CK Framework</li>
-<li>Incident Investigation (Entry Level)</li>
-</ul>
-
-<hr>
-
-<h2>🛠️ Technical Skills</h2>
-<ul>
-<li><strong>Operating Systems:</strong> Windows, Linux, Kali Linux</li>
-<li><strong>Networking:</strong> TCP/IP, Subnetting, LAN/WAN</li>
-<li><strong>Security Tools:</strong> Wireshark, Nmap, Bettercap, Wazuh</li>
-<li><strong>Virtualization:</strong> VMware, VirtualBox</li>
-</ul>
-
-<hr>
+<span class="badge">SOC Operations</span>
+<span class="badge">Threat Detection</span>
+<span class="badge">Log Analysis</span>
+<span class="badge">SIEM (Wazuh)</span>
+<span class="badge">Wireshark</span>
+<span class="badge">Nmap</span>
+<span class="badge">MITRE ATT&CK</span>
+<span class="badge">Incident Response</span>
+<span class="badge">Linux</span>
+<span class="badge">Windows</span>
 
 <h2>💼 Projects</h2>
 
+<div class="grid">
+
 <div class="card">
-<h3>🔐 SOC Lab – Wazuh SIEM</h3>
-  <li>
-    The lab environment was built using multiple virtual machines deployed across two different hypervisors.
-    Specifically, <strong>VMware</strong> was used to create two main virtual machines: an 
-    <strong>Ubuntu Server</strong> instance, acting as the central monitoring and management system, 
-    and a <strong>Windows 10</strong> machine, configured as the target host.
-  </li>
-  <li>
-    On the Ubuntu Server, the <strong>Wazuh Manager</strong> was installed and configured to function as a 
-    SIEM (Security Information and Event Management) platform. The <strong>Wazuh agent</strong> was then installed 
-    on the Windows 10 machine and successfully connected to the manager. The agent registration and communication 
-    were verified both locally on Windows 10 and through the <strong>Wazuh dashboard</strong>, ensuring that logs 
-    and security events were properly collected and visualized.
-  </li>
-  <li>
-    In parallel, a <strong>Kali Linux</strong> virtual machine was deployed using <strong>VirtualBox</strong>, 
-    serving as the attacker system. Various simulated attacks were launched from Kali Linux against the Windows 10 
-    machine in order to generate security events and test detection capabilities.
-  </li>
-  <li>
-    All malicious activities and intrusion attempts were monitored through the Wazuh platform, allowing for 
-    real-time event analysis, log correlation, and the generation of detailed security reports.
-  </li>
+<h3>🔐 Wazuh SIEM SOC Lab</h3>
+<p>Multi-VM SOC environment for monitoring and attack simulation.</p>
+<span class="badge">Wazuh</span>
+<span class="badge">VMware</span>
+<span class="badge">Linux</span>
+<span class="badge">Windows</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
 </div>
 
 <div class="card">
-<h3>📊 Wireshark Traffic Analysis</h3>
-<ul>
-<li>Captured and analysed DNS traffic</li>
-<li>Performed TCP/UDP packet inspection</li>
-<li>Identified abnormal network behaviour</li>
-<li>Generated packet analysis reports</li>
-</ul>
+<h3>📊 Wireshark Analysis</h3>
+<p>Packet inspection and network traffic analysis in lab environment.</p>
+<span class="badge">Wireshark</span>
+<span class="badge">TCP/IP</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
 </div>
 
 <div class="card">
-<h3>📶 Wireless Security Testing Lab</h3>
-<ul>
-<li>Flipper Zero RF signal analysis and wireless monitoring</li>
-<li>Identified weak WiFi configurations in lab environment</li>
-<li>Improved wireless security settings</li>
-</ul>
+<h3>📶 Wireless Security Lab</h3>
+<p>Flipper Zero RF analysis and WiFi security testing.</p>
+<span class="badge">RF Analysis</span>
+<span class="badge">Wireless Security</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
 </div>
 
 <div class="card">
-<h3>🖥️ Network Scanning & Enumeration</h3>
-<ul>
-<li>Nmap TCP SYN scans and service detection</li>
-<li>Host discovery and network mapping</li>
-<li>Basic enumeration techniques in lab environments</li>
-</ul>
+<h3>🖥️ Network Scanning</h3>
+<p>Nmap-based reconnaissance and enumeration labs.</p>
+<span class="badge">Nmap</span>
+<span class="badge">Enumeration</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
 </div>
 
 <div class="card">
-<h3>🎓 TryHackMe SOC Path</h3>
-<ul>
-<li>SIEM and log analysis labs</li>
-<li>Threat detection exercises</li>
-<li>Incident response fundamentals</li>
-<li>MITRE ATT&CK framework understanding</li>
-</ul>
-</div>
-
-<hr>
-
-<h2>📡 Wireless Security Lab Projects</h2>
-
-<div class="card">
-
 <h3>🤖 Pwnagotchi Build</h3>
-
-<p>
-Built a Pwnagotchi device from scratch to gain hands-on experience with embedded Linux systems and wireless networking.
-</p>
-
-<ul>
-<li>Assembled Raspberry Pi Zero W hardware</li>
-<li>Installed Pwnagotchi OS from GitHub</li>
-<li>Configured custom config.toml settings</li>
-<li>Installed drivers and firmware updates</li>
-<li>Configured SSH remote access</li>
-<li>Used Bettercap for wireless monitoring in lab environment</li>
-</ul>
-
+<p>Embedded Linux wireless monitoring device.</p>
+<span class="badge">Raspberry Pi</span>
+<span class="badge">Linux</span>
+<span class="badge">Bettercap</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
 </div>
 
 <div class="card">
-
-<h3>📡 Custom Wireless Security Lab Device</h3>
-
-<p>
-Designed a wireless security lab device using GL.iNet router and RT5370 WiFi adapter.
-</p>
-
-<ul>
-<li>Configured GL.iNet router with OpenWRT-based firmware</li>
-<li>Installed firmware from GitHub sources</li>
-<li>Integrated external WiFi antenna (RT5370 chipset)</li>
-<li>Configured SSH remote administration</li>
-<li>Performed wireless network monitoring in lab environment</li>
-<li>Used Bettercap for packet analysis</li>
-</ul>
+<h3>📡 GL.iNet Security Lab</h3>
+<p>Custom OpenWRT-based wireless security platform.</p>
+<span class="badge">OpenWRT</span>
+<span class="badge">Networking</span>
+<br>
+<a class="btn btn-secondary" href="#">View Project</a>
+</div>
 
 </div>
+
+<h2>🏠 Home Lab</h2>
 
 <div class="card">
-
-<h3>📡 Flipper Zero Lab</h3>
-
-<ul>
-<li>RF signal monitoring and analysis</li>
-<li>Detection of weak wireless configurations</li>
-<li>Improved WiFi security settings in lab environment</li>
-</ul>
-
-<p><strong>Outcome:</strong> Improved understanding of wireless security exposure risks.</p>
-
-</div>
-
-<hr>
-
-<h2>🏠 Cybersecurity Home Lab</h2>
-
 <ul>
 <li>Ubuntu Server (Wazuh SIEM)</li>
 <li>Windows 10 Endpoint</li>
 <li>Kali Linux VM</li>
 <li>VMware Workstation</li>
 <li>Pwnagotchi Device</li>
-<li>Custom Wireless Security Lab Device</li>
-<li>Wireshark Network Analysis</li>
-<li>SSH Remote Administration</li>
+<li>Custom GL.iNet Router Lab</li>
 </ul>
-
-<hr>
+</div>
 
 <h2>🏆 Certifications</h2>
 
+<div class="card">
 <ul>
-<li>CompTIA A+ (Certified)</li>
 <li>CompTIA Network+ (Certified)</li>
 <li>CompTIA Security+ (In Progress)</li>
-<li>TryHackMe SOC Level 1 Path</li>
-<li>E-Council CeH (In Progress)</li>
+<li>TryHackMe SOC Path</li>
 </ul>
-
-<hr>
-
-<h2>💼 Experience</h2>
-
-<p>
-Over 20 years of leadership and operational experience in fast-paced environments, with strong problem-solving, communication, and incident management skills transferable to IT Technical Support and Junior SOC Analyst roles.
-</p>
-
-<hr>
+</div>
 
 <h2>🎯 Career Objective</h2>
 
+<div class="card">
 <p>
-Seeking an entry-level SOC Analyst or Cybersecurity Analyst role where I can apply hands-on home lab experience, networking knowledge, SIEM monitoring skills, and continuous learning mindset to support security operations.
+Seeking an entry-level SOC Analyst or Cybersecurity Analyst role to apply practical lab experience, SIEM knowledge, and networking skills in a real-world security operations environment.
 </p>
+</div>
 
-<hr>
+<h2>📄 CV Download</h2>
 
-<h2>📫 Contact</h2>
-
-<ul>
-<li>Email: patrizio.ricciardelli@gmail.com</li>
-<li><a href="https://PRicciardelli.GitHub.io" target="_blank">GitHub</a></li>
-<li><a href="https://uk.linkedin.com/in/patrizio-ricciardelli-363b3340a" target="_blank">LinkedIn</a></li>
-</ul>
+<div class="card">
+<p>Download my full CV for more details.</p>
+<a class="btn" href="cv.pdf" target="_blank">Download CV</a>
+</div>
 
 </div>
+
+<footer>
+<p>© 2026 Patrizio Ricciardelli | Cybersecurity Portfolio</p>
+</footer>
 
 </body>
 </html>
